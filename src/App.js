@@ -1,14 +1,26 @@
 import './App.css';
-import { Button } from 'react-bootstrap';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import LogInPage from "./pages/logIn";
+import Home from "./pages/home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button>Test Button</Button>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/">
+          <LogInPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
-export default App;
