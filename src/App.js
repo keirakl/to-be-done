@@ -3,11 +3,10 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import LogInPage from "./pages/logIn";
-import Home from "./pages/home";
+import LogInPage from "./pages/LogInPage";
+import Home from "./pages/HomePage";
 
 export default function App() {
   return (
