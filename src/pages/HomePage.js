@@ -2,7 +2,8 @@ import React from 'react';
 
 class Home extends React.Component {
     render() {
-        return <h1>Home page (After logged in)</h1>
+        // console.log(localStorage.currUser);
+        return <h1>Hello, {JSON.parse(localStorage.currUser).username}!</h1>
     }
 }
 
